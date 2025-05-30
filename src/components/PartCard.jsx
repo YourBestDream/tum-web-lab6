@@ -7,11 +7,18 @@ export default function PartCard({ part, onLike, onRemove }) {
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
-      <img
-        src={part.image}
-        alt={part.name}
-        className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
-      />
+      <div className="relative h-48 overflow-hidden">
+        <img
+          src={part.image}
+          alt={part.name}
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          onError={(e) => {
+            e.target.src = 'https://m.media-amazon.com/images/I/71K7Q4FpguL._AC_SL1500_.jpg'
+            e.target.onerror = null
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+      </div>
       <div className="p-4">
         <div className="flex justify-between items-start">
           <div>
