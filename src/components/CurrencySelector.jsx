@@ -10,7 +10,7 @@ export default function CurrencySelector() {
     <Menu as="div" className="relative inline-block text-left">
       <Menu.Button className="inline-flex items-center justify-center p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200">
         <CurrencyDollarIcon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
-        <span className="ml-2 text-gray-800 dark:text-gray-200">{currency}</span>
+        <span className="ml-2 text-gray-800 dark:text-gray-200 transition-colors duration-200">{currency}</span>
       </Menu.Button>
       <Transition
         as={Fragment}
