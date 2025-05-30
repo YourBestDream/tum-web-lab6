@@ -38,4 +38,4 @@ A modern web application for browsing and managing car parts inventory. Built wi
 
 ## Deployment
 
-The application is deployed on GitHub Pages at [your-github-pages-url]
+The application is deployed on GitHub Pages at [https://github.com/YourBestDream/tum-web-lab6]
